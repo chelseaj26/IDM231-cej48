@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'fortuna_dotregular';
+    src: url('fortd___-webfont.woff2') format('woff2'),
+        url('fortd___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('lato-light-webfont.woff2') format('woff2'),
+        url('lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,79 @@
+/*FONTS*/
+:root {
+    --font-bold: 'fortuna_dotregular', sans-serif;
+    --font-regular: 'noto_sansregular', sans-serif;
+    --font-light: 'latolight', sans-serif;
+}
+
+body {
+    background-image: url("media/images/background.jpg");
+    background-size: 1200px 800px;
+    max-height: 800px;
+    max-width: 1200px;
+
+}
+
+.header h1 {
+    font-family: var(--font-bold);
+    text-align: center;
+    color: white;
+}
+
+.directions {
+    font-family: var(--font-regular);
+    color: white;
+    text-align: center
+}
+
+.result-pic {
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 2rem auto;
+    border: 1px solid white;
+
+}
+
+/* CIRCLE CROP*/
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+    margin-left: auto;
+    height: 100%;
+    width: auto;
+}
+
+.astrosigns-buttons {
+    width: 3.9rem;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.astrosigns-buttons img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -35%;
+    margin-top: -9.5%;
+}
+
+form {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.compute-button {
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.showMe {
+
+    color: white;
+}
