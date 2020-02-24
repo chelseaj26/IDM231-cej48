@@ -8,8 +8,6 @@
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="picker.js">
-
 </head>
 
 <body>
@@ -22,61 +20,31 @@
         <div class="result-pic">
             <img src="media/images/question.png" alt="Your Result" class="profile-pic">
         </div>
-        <div class=" directions">
-            <p>
-                Put in your birthday (or choose your sign if you already know it) to find out which disco star you are!
-            </p>
-        </div>
         <form action="">
             <label for="zods"></label>
             <input type="date" id="zodDate" name="zodDate">
         </form>
-        <div class="compute-button">
-            <button id="compute" onclick="computeZod();">Go!</button>
-        </div>
+        <button id="compute" onclick="computeZod();">Go!</button>
         <div id="showMe"></div>
 
-
-        <section class="astrosigns-area">
-            <div class="astrosigns-buttons">
-                <button onclick="JavaScript:alert('You will love this book!')">
-                    <img src="media/images/discoball.png" alt="Aquarius">
-                </button>
-                <!-- <button onclick="JavaScript:alert('You will love this book!')">
-                    <img src="media/images/discoball.png" alt="Pis">
-                </button>
-                <button onclick="JavaScript:alert('You will love this book!')">
-                    <img src="media/images/discoball.png" alt="Ari">
-                </button>
-                <button onclick="JavaScript:alert('You will love this book!')">
-                    <img src="media/images/discoball.png" alt="Tau">
-                </button>
-                <button onclick="JavaScript:alert('You will love this book!')">
-                    <img src="media/images/discoball.png" alt="Gem">
-                </button>
-                <button onclick="JavaScript:alert('You will love this book!')">
-                    <img src="media/images/discoball.png" alt="Can">
-                </button> 
-                
-                
-                <!--<button type="button">Aquarius</button>
-                <button type="button">Pisces</button>
-                <button type="button">Aries</button>
-                <button type="button">Taurus</button>
-                <button type="button">Gemini</button>
-                <button type="button">Cancer</button>
-                <button type="button">Leo</button>
-                <button type="button">Virgo</button>
-                <button type="button">Libra</button>
-                <button type="button">Scorpio</button>
-                <button type="button">Sagittarius</button>
-                <button type="button">Capricorn</button> !-->
-            </div>
-        </section>
-
-
     </div>
+    <div id="astrosigns">
+                    <button id="ari">ARI</button>
+                    <button id="tau">TAU</button>
+                    <button id="gem">GEM</button>
+                    <button id="can">CAN</button>
+                    <button id="leo">LEO</button>
+                    <button id="vir">VIR</button>
+                    <button id="lib">LIB</button>
+                    <button id="sco">SCO</button>
+                    <button id="sag">SAG</button>
+                    <button id="cap">CAP</button>
+                    <button id="aqu">AQU</button>
+                    <button id="pis">PIS</button>
+
+                </div>
     <script src="picker.js"></script>
 
+</body>
 
-</body></html>
+</html>
