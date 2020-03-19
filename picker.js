@@ -140,7 +140,7 @@ function swapZodInfo(whichOne) {
     } else if (whichOne == 2) {
         console.log('Taurus');
         showMeObj.innerHTML =
-            "<h3> The Bee Gees </h3> <h4>April 20 - May 20 </h4>  <p>The Bee Gees were a pop music group formed in 1958. Their lineup consisted of brothers Barry, Robin, and Maurice Gibb. The trio were especially successful as a popular music act in the late 1960s and early 1970s, and later as prominent performers of the disco music era in the mid-to-late 1970s. </p>";
+            "<h3> The Bee Gees </h3> <h4>April 20 - May 20 </h4>  <p>The Bee Gees were a pop music group formed in 1958. The trio were especially successful as a popular music act in the late 1960s and early 1970s, and later as prominent performers of the disco music era in the mid-to-late 1970s. </p>";
         heroObj.src = 'media/images/bee_gees.jpg';
         playSomething('sounds/bee_gees.mp3');
     } else if (whichOne == 3) {
@@ -190,7 +190,7 @@ function swapZodInfo(whichOne) {
     } else if (whichOne == 10) {
         console.log('Capricorn');
         showMeObj.innerHTML =
-            "<h3>Donna Summer</h3> <h4>December 22 - January 19</h4>  <p>Donna Summer rocketed to international super-stardom in the mid-1970s when her groundbreaking merger of R&B, soul, pop, funk, rock, disco and avant-garde electronica catapulted underground dance music out of the clubs of Europe to the pinnacles of sales and radio charts around the world. </p>";
+            "<h3>Donna Summer</h3> <h4>December 22 - January 19</h4>  <p>Rose to international super-stardom in the mid-1970s when her groundbreaking merger of R&B, soul, pop, funk, rock, disco and avant-garde electronica catapulted underground dance music out of the clubs to the pinnacles of sales and radio charts around the world. </p>";
         heroObj.src = 'media/images/donna_summer.jpg';
         playSomething('sounds/donna_summer.mp3');
 

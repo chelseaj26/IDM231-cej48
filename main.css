@@ -1,32 +1,68 @@
+@font-face {
+    font-family: 'fortuna_dotregular';
+    src: url('media/fonts/fortd___-webfont.woff2') format('woff2'),
+        url('media/fonts/fortd___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_bkbook';
+    src: url('media/fonts/futura_book-webfont.woff2') format('woff2'),
+        url('media/fonts/futura_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'broadwayengraved';
+    src: url('media/fonts/b-e-r-webfont.woff2') format('woff2'),
+        url('media/fonts/b-e-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'monotonregular';
+    src: url('media/fonts/monoton-regular-webfont.woff2') format('woff2'),
+        url('media/fonts/monoton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /*
-FONTS
-:root {
-    --font-bold: 'fortuna_dotregular', sans-serif;
+FONTS:root {
+    --font-bold: 'fortuna_dotregular', serif;
     --font-regular: 'noto_sansregular', sans-serif;
     --font-light: 'latolight', sans-serif;
 }
 */
 
+#wholepage {
+    width: 1200px;
+    margin: auto;
+}
+
 body {
     background-image: url("media/images/background.jpg");
-    background-size: 1200px 800px;
-    max-height: 800px;
-    max-width: 1200px;
-    font:
+
+    font-family: 'futura_bkbook';
+    line-height: .95em;
+    min-height: 800px;
 
 }
 
 .header h1 {
-    font-family: var(--font-bold);
     text-align: center;
     color: white;
+    font-family: 'broadwayengraved';
+    font-weight: 100;
 }
-
-/*.directions {
-    font-family: var(--font-regular);
-    color: white;
-    text-align: center
-} */
 
 #result-pic {
     width: 15rem;
@@ -64,8 +100,13 @@ form {
 }
 
 #showMe {
+    max-height: 15rem;
+    max-width: 20rem;
+    margin: auto;
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 0, .78);
+
 }
 
 #showMe p {
@@ -74,34 +115,45 @@ form {
     text-align: justify;
     font-size: 1rem;
     margin: auto;
-
-
 }
 
 #astrosigns button img {
-    max-height: 4em;
-    max-width: 4em;
+    max-height: 3.6em;
+    max-width: 3.6em;
     padding: 0;
+    position: relative;
+    top: -4px;
+    right: 4.1px;
 }
 
+
 #astrosigns button {
-    max-height: 6rem;
-    max-width: 6rem;
-    background-color: transparent;
+    max-height: 3.3rem;
+    max-width: 3rem;
     padding: 0;
     border: none;
-    margin: auto;
-    font-size: 1rem;
+    margin: 0;
 }
 
 #astrosigns {
     text-align: center;
-    justify-content: center;
-    padding: 0;
+    padding: .5em 0;
     margin: auto;
-    max-width: 30rem;
+    max-width: 20rem;
+    float: left;
 }
 
+#result-n-form {
+    float: left;
+
+}
+
+#pic-n-btns {
+    padding-top: 3em;
+    margin: auto;
+    position: relative;
+    left: 300px;
+}
 
 /*HELP BUTTON*/
 
@@ -114,12 +166,11 @@ button {
     height: 50px;
     background-color: white;
     color: purple;
-    padding: .75rem;
     border-radius: 50%;
     border: 75;
     font-size: 1rem;
-    font-weight: bold;
     text-transform: uppercase;
+    font-family: 'monotonregular';
     transition: background-color 225ms ease-in-out;
 }
 
@@ -166,6 +217,7 @@ button:hover {
     border: 1rem solid purple;
     border-radius: 3%;
     color: white;
+    line-height: 1.2em;
 
     height: 45vh;
     max-width: 50vw;
@@ -207,10 +259,23 @@ button:hover {
 
 }
 
+h3,
+h4 {
+    margin: .5rem;
+}
+
+h3 {
+    padding-top: .23rem;
+    font-size: 1.5rem;
+}
+
 .footer {
     color: white;
     text-align: center;
     margin: auto;
     padding: 0;
-    bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 500px;
+
 }

@@ -10,67 +10,74 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="header">
-                <h1> Which Disco Star Are You?</h1>
-            </div>
-        </header>
-
-        <button id="btn-modal-open" class="toggle-modal">?</button>
-        <div id="modal" class="modal" hidden>
-            <div class="modal-body">
-                <div class="modal-content">
-                    <p>
-                        Fill in your birthday or choose your zodiac sign if you already know it, to find out which disco star you are!
-                    </p>
-                    <button id="btn-modal-close" class="toggle-modal">Close</button>
+    <div id="wholepage">
+        <div id="wrapper">
+            <header>
+                <div class="header">
+                    <h1> Which Disco Star Are You?</h1>
                 </div>
+            </header>
+
+            <button id="btn-modal-open" class="toggle-modal">?</button>
+            <div id="modal" class="modal" hidden>
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <p>
+                            Fill in your birthday or choose your zodiac sign if you already know it, to find out which disco star you are!
+                        </p>
+                        <button id="btn-modal-close" class="toggle-modal">Close</button>
+                    </div>
+                </div>
+                <div class="blanket"></div>
             </div>
-            <div class="blanket"></div>
-        </div>
 
-        <div id="result-pic">
-            <img id="hero" src="media/images/question.png" alt="Your Result" />
-        </div>
+            <div id="pic-n-btns">
+                <div id="result-n-form">
+                    <div id="result-pic">
+                        <img id="hero" src="media/images/question.png" alt="Your Result" />
+                    </div>
 
-        <form action="">
-            <label for="zods"></label>
-            <input type="date" id="zodDate" name="zodDate">
-        </form>
-        <div id="compute-content">
-            <button id="compute" onclick="computeZod();">Go!</button>
-        </div>
-        <div id="showMe"></div>
+                    <form action="">
+                        <label for="zods"></label>
+                        <input type="date" id="zodDate" name="zodDate">
+                    </form>
+                    <div id="compute-content">
+                        <button id="compute" onclick="computeZod();">Go!</button>
+                    </div>
+                    <div id="showMe"></div>
 
+                </div>
+
+                <div id="astrosigns">
+                                <button id="butari"><img src="media/images/zod_signs/ari.png" alt="Aries"></button>
+                                <button id="buttau"><img src="media/images/zod_signs/tau.png" alt="Taurus"></button>
+                                <button id="butgem"><img src="media/images/zod_signs/gem.png" alt="Gemini"></button>
+                                <button id="butcan"><img src="media/images/zod_signs/can.png" alt="Cancer"></button>
+                                <button id="butleo"><img src="media/images/zod_signs/leo.png" alt="Leo"></button>
+                                <button id="butvir"><img src="media/images/zod_signs/vir.png" alt="Virgo"></button>
+                                <button id="butlib"><img src="media/images/zod_signs/lib.png" alt="Libra"></button>
+                                <button id="butsco"><img src="media/images/zod_signs/sco.png" alt="Scorpio"></button>
+                                <button id="butsag"><img src="media/images/zod_signs/sag.png" alt="Sagittarius"></button>
+                                <button id="butcap"><img src="media/images/zod_signs/cap.png" alt="Capricorn"></button>
+                                <button id="butaqu"><img src="media/images/zod_signs/aqu.png" alt="Aquarius"></button>
+                                <button id="butpis"><img src="media/images/zod_signs/pis.png" alt="Pisces"></button>
+
+
+                    <audio src="sounds/madonna.mp3" id="soundplayer">
+                        <p>No Sound</p>
+                    </audio>
+                            </div>
+                   
+            </div>     
+        </div>
+                
+         <div class="footer" id="footer">
+                    <h4>©Chelsea James 2020</h4>
+                    
+                   
+        </div>
+        <script src="picker.js"></script>
     </div>
-    <div id="astrosigns">
+</body>
 
-
-
-                    <button id="butari"><img src="media/images/zod_signs/ari.png" alt="Aries"></button>
-                    <button id="buttau"><img src="media/images/zod_signs/tau.png" alt="Taurus"></button>
-                    <button id="butgem"><img src="media/images/zod_signs/gem.png" alt="Gemini"></button>
-                    <button id="butcan"><img src="media/images/zod_signs/can.png" alt="Cancer"></button>
-                    <button id="butleo"><img src="media/images/zod_signs/leo.png" alt="Leo"></button>
-                    <button id="butvir"><img src="media/images/zod_signs/vir.png" alt="Virgo"></button>
-                    <button id="butlib"><img src="media/images/zod_signs/lib.png" alt="Libra"></button>
-                    <button id="butsco"><img src="media/images/zod_signs/sco.png" alt="Scorpio"></button>
-                    <button id="butsag"><img src="media/images/zod_signs/sag.png" alt="Sagittarius"></button>
-                    <button id="butcap"><img src="media/images/zod_signs/cap.png" alt="Capricorn"></button>
-                    <button id="butaqu"><img src="media/images/zod_signs/aqu.png" alt="Aquarius"></button>
-                    <button id="butpis"><img src="media/images/zod_signs/pis.png" alt="Pisces"></button>
-
-
-        <audio src="sounds/madonna.mp3" id="soundplayer">
-            <p>No Sound</p>
-        </audio>
-                </div>
-            <div class="footer" id="footer">
-                <p>
-                     ©Chelsea James 2020
-                    </p>
-    </div>
-    <script src="picker.js"></script>
-
-</body></html>
+</html>
